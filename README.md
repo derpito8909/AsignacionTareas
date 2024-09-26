@@ -3,8 +3,9 @@
 </h1>
 
 ## Introducción
-Asignacion de tareas es un API REST en .net core version 8 para un sistema de asignación de tareas con autenticación de
-usuarios y sistema de roles, esta API se desarrollo en la arquitectura MVC con el patron de diseño repositorio y injeccion de dependencias
+Asignacion de tareas es un sistema de asignación de tareas con autenticación de
+usuarios y sistema de roles consta de dos proyectos uno es un API REST en .net core version 8 el cual se desarrollo en la arquitectura MVC con el patron de diseño repositorio y injeccion de dependencias.
+el otro es un sitio web que consume el api y se desarollo en Angular version 18.2.6. con la arquitectura MVC y interseptores para insertar el token JWT
 
 ## Desarrollo
 
@@ -16,6 +17,7 @@ Para ejecutar la aplicacion necesita tener instalado este aplicacion
 ###
 
 - skd donet 8
+-  Angular CLI version 18.2.6
 </details>
 
 <details open>
@@ -48,5 +50,22 @@ para ejecutar la aplicacion:
 ```
 6. la aplicacion esta lista en http://localhost:5000
 
+##
+para ejecutar el sitio web 
+
+1. ingrese a la carperta cd AsignacionTareas/tareasWeb/tareasWeb
+```shell
+ cd AsignacionTareas/tareasWeb/tareasWeb
+```
+2. compile la aplicacion
+```shell
+ ng build
+```
+3 ejecute la aplicacion
+```shell
+ ng serve
+```
+4 la aplicacion esta lista en http://localhost:4200/
+   
 
    
